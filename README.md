@@ -4,7 +4,7 @@ This is my personal portfolio website where I showcase my web development skills
 
 🔗 Live Website
 
-https://usmrem.github.io/my-cv-site/
+https://usmrem.com
 
 🚀 About The Project
 
