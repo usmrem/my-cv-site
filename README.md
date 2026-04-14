@@ -27,6 +27,4 @@ Add more projects
 Add animations
 👨‍💻 Author
 
-Emirow
-
 GitHub: https://github.com/usmrem
