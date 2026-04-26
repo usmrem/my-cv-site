@@ -12,7 +12,10 @@ body {
   color: #CCD6f6;
 }
 
-/* HEADER */
+::selection {
+  background: #64ffda;
+  color: #0A192F;
+}
 
 .header {
   display: flex;
