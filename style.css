@@ -35,9 +35,17 @@ section.show {
   transform: translateY(0) !important;
 }
 
-::selection,
-::-webkit-selection,
-::-moz-selection {
+*::selection {
+  background: #64ffda;
+  color: #0A192F;
+}
+
+*::-webkit-selection {
+  background: #64ffda;
+  color: #0A192F;
+}
+
+*::-moz-selection {
   background: #64ffda;
   color: #0A192F;
 }
