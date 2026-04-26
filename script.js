@@ -1,4 +1,3 @@
-// DOTS ANIMATION
 const dots = document.getElementById("dots");
 const frames = ["", ".", "..", "..."];
 let i = 0;
@@ -8,8 +7,6 @@ setInterval(() => {
   i = (i + 1) % frames.length;
 }, 400);
 
-
-// OBSERVER OPTIONS
 const options = {
   threshold: 0.2
 };
@@ -35,7 +32,7 @@ const cardObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add("show");
-      cardObserver.unobserve(entry.target); // остановить наблюдение
+      cardObserver.unobserve(entry.target);
     }
   });
 }, options);
