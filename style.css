@@ -3,9 +3,6 @@ html {
 }
 
 body {
-  user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
   font-family: Arial, sans-serif;
   margin: 0;
   background-color: #0b182f;
