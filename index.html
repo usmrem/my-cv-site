@@ -7,6 +7,7 @@
   <link href="https://fonts.googleapis.com/css2?family=NTR&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" href="favicon.png">
+  
 </head>
 <body>
 
@@ -34,7 +35,9 @@
 
   <main>
     <section class="home" id="home">
-      <h2>hi,<span class="name"> Emir </span>here<span id="dots">.</span></h2>
+      <h2>
+        hi,<span class="name"> Emir </span>here.<span class="cursor"></span>
+      </h2>
       <p class="small-text">I’m a frontend developer based in Almaty, focused on responsive and user-friendly web interfaces. I work on responsive websites and small web projects, focusing on structure, clarity, and thoughtful design decisions. I care about how interfaces behave across devices and how small interactions improve the overall experience.</p>
       <a href="mailto:Emirovn@icloud.com"class="home-btn">
           <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
@@ -71,7 +74,7 @@
         <li>Javascript ES6+</li>
         <li>React.js</li>
         <li>Git / Github</li>
-        <li>Typescript</li>
+        <li>TypeScript</li>
       </ul>
     </ul>
   </div>
@@ -82,28 +85,84 @@
 </div>
 </section>
 
-    <section id="experience">
-      <div class="section-title">
-      <h2>/ experience</h2>
-      <span class="line"></span>
+<section id="experience">
+  <div class="section-title">
+    <h2>/ experience</h2>
+    <span class="line"></span>
   </div>
-      <p><b>Frontend Developer</b></p>
-<p>
-  I build responsive and accessible websites using HTML, CSS, and JavaScript,
-  focusing on clean layout structure and user-friendly design. My experience
-  comes from personal and learning projects where I implement real interface
-  features from scratch.
 
-  I work with semantic HTML, Flexbox, and Grid to create adaptive layouts,
-  and I use JavaScript to add basic interactivity such as menu behavior,
-  UI states, and dynamic content. I pay attention to code readability,
-  naming, and file structure.
+  <div class="experience-wrapper">
 
-  All projects are version-controlled with Git and published on GitHub.
-  Through these projects, I’ve developed a solid understanding of how
-  frontend code is structured and maintained.
+    <div class="tabs">
 
-</p>
+      <button class="tab active"
+        onclick="showJob(event,'kaztechnology')">
+        KAZTECHNOLOGY
+      </button>
+
+      <button class="tab"
+        onclick="showJob(event,'timeinvest')">
+        TIME INVEST
+      </button>
+
+    </div>
+
+    <div class="job-content">
+
+      <div id="kaztechnology" class="job active-job">
+
+        <h3>
+          Frontend Developer
+          <span>
+            <a href="https://vputi.kz/en"
+                 target="_blank"
+                 class="company-link">
+                 Kaztechnology
+              </a>
+          </span>
+        </h3>
+
+        <p class="date">AUG 2025 — JUN 2026</p>
+
+        <ul>
+          <li>Maintained and improved the Vputi.kz multimedia portal.</li>
+          <li>Developed responsive interfaces using HTML, CSS and JavaScript.</li>
+          <li>Implemented UI improvements and bug fixes.</li>
+          <li>Optimized website performance and user experience.</li>
+          <li>Worked with Git and GitHub for version control.</li>
+        </ul>
+
+      </div>
+
+      <div id="timeinvest" class="job">
+
+        <h3>
+          Frontend Developer & IT Support
+          <span>
+            <a href="https://www.timeinvest.kz/"
+                 target="_blank"
+                 class="company-link">
+                 Time Invest
+              </a>
+          </span>
+        </h3>
+
+        <p class="date">JUL 2024 — JUN 2025</p>
+
+        <ul>
+          <li>Maintained and improved the company website.</li>
+          <li>Developed responsive interfaces using HTML, CSS and JavaScript.</li>
+          <li>Implemented UI updates and fixed frontend issues.</li>
+          <li>Provided remote technical support across 17 regions of Kazakhstan.</li>
+          <li>Configured Windows, networking equipment and IP cameras.</li>
+          <li>Resolved technical issues for company employees.</li>
+        </ul>
+
+      </div>
+
+    </div>
+
+  </div>
 </section>
 
     <section id="projects">
@@ -329,5 +388,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
-
