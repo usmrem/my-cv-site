@@ -1,12 +1,3 @@
-const dots = document.getElementById("dots");
-const frames = ["", ".", "..", "..."];
-let i = 0;
-
-setInterval(() => {
-  dots.textContent = frames[i];
-  i = (i + 1) % frames.length;
-}, 400);
-
 const options = {
   threshold: 0.2
 };
@@ -40,3 +31,18 @@ const cardObserver = new IntersectionObserver((entries) => {
 cards.forEach(card => {
   cardObserver.observe(card);
 });
+
+function showJob(event,id){
+
+    document.querySelectorAll('.job')
+        .forEach(job => job.classList.remove('active-job'));
+
+    document.querySelectorAll('.tab')
+        .forEach(tab => tab.classList.remove('active'));
+
+    document.getElementById(id)
+        .classList.add('active-job');
+
+    event.currentTarget
+        .classList.add('active');
+}
