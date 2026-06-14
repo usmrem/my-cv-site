@@ -1,48 +1,34 @@
-const options = {
+const observerOptions = {
   threshold: 0.2
 };
 
-const sections = document.querySelectorAll("section");
-
-const sectionObserver = new IntersectionObserver((entries) => {
+const observer = new IntersectionObserver((entries, observer) => {
   entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("show");
-      sectionObserver.unobserve(entry.target);
-    }
+    if (!entry.isIntersecting) return;
+
+    entry.target.classList.add("show");
+    observer.unobserve(entry.target);
   });
-}, options);
+}, observerOptions);
 
-sections.forEach(section => {
-  sectionObserver.observe(section);
-});
+document
+  .querySelectorAll("section, .project-card")
+  .forEach(element => observer.observe(element));
 
-const cards = document.querySelectorAll(".project-card");
+function showJob(event, jobId) {
+  document
+    .querySelectorAll(".job")
+    .forEach(job => job.classList.remove("active-job"));
 
-const cardObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("show");
-      cardObserver.unobserve(entry.target);
-    }
-  });
-}, options);
+  document
+    .querySelectorAll(".tab")
+    .forEach(tab => tab.classList.remove("active"));
 
-cards.forEach(card => {
-  cardObserver.observe(card);
-});
+  const selectedJob = document.getElementById(jobId);
 
-function showJob(event,id){
+  if (selectedJob) {
+    selectedJob.classList.add("active-job");
+  }
 
-    document.querySelectorAll('.job')
-        .forEach(job => job.classList.remove('active-job'));
-
-    document.querySelectorAll('.tab')
-        .forEach(tab => tab.classList.remove('active'));
-
-    document.getElementById(id)
-        .classList.add('active-job');
-
-    event.currentTarget
-        .classList.add('active');
+  event.currentTarget.classList.add("active");
 }
