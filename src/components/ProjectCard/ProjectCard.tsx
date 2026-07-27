@@ -23,7 +23,7 @@ type Props = {
 function ProjectCard({ project }: Props) {
 
   return (
-    <div className="project-card">
+    <div className="project-card show">
 
 
       <div className="project-header">
