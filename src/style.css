@@ -139,12 +139,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-
   color: var(--text-primary);
 
   transition:
     color 0.3s ease,
-    transform 0.2s ease;
+    transform 0.3s ease;
 }
 
 .home {
@@ -322,11 +321,13 @@ section ul li {
   gap: 12px;
   min-height: 220px;
 
-  opacity: 1;
-  transform: translateY(0);
+  opacity: 0;
+  transform: translateY(30px);
+
   transition:
-  transform 0.3s ease,
-  box-shadow 0.3s ease;
+    opacity 0.5s ease,
+    transform 0.5s ease,
+    box-shadow 0.3s ease;
 }
 
 .project-card.show {
@@ -485,13 +486,6 @@ section ul li {
   color: var(--accent);
 }
 
-.right a,
-.theme-btn {
-  transition:
-    color 0.3s ease,
-    transform 0.3s ease;
-}
-
 .right a:hover,
 .theme-btn:hover {
   color: var(--accent);
@@ -508,7 +502,7 @@ section ul li {
     min-width:180px;
     display:flex;
     flex-direction:column;
-    border-left:2px solid var(--border-color);
+    border-bottom:1px solid var(--border-color);
 }
 
 .tab{
