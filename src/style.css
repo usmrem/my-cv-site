@@ -489,7 +489,7 @@ section ul li {
 }
 
 .nav-links a:hover {
-  color: #64ffda;
+  color: var(--accent);
 }
 
 .right a,
@@ -530,11 +530,11 @@ section ul li {
 }
 
 .tab:hover{
-    color:#64ffda;
+    color: var(--accent);
 }
 
 .tab.active{
-    color:#64ffda;
+    color: var(--accent);
     border-left:2px solid #64ffda;
     margin-left:-2px;
 }
@@ -559,20 +559,20 @@ section ul li {
 }
 
 .job span{
-    color:#64ffda;
+  color: var(--accent);
 }
 
 .company-link,
 .company-link:link,
 .company-link:visited,
 .company-link:active{
-    color:#64ffda;
+    color: var(--accent);
     text-decoration:none;
     transition:.3s;
 }
 
 .company-link:hover{
-    color:#ffffff;
+    color: var(--accent);
 }
 
 .date{
@@ -598,7 +598,7 @@ section ul li {
     content:"▹";
     position:absolute;
     left:0;
-    color:#64ffda;
+    color: var(--accent);
 }
 
 @media (max-width:768px){
@@ -638,7 +638,7 @@ section ul li {
         display:inline-block;
         width:6px;
         height:55px;
-        background:#64ffda;
+        background: var(--accent);
         margin-left:8px;
         border-radius:2px;
         vertical-align:middle;
