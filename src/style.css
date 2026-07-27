@@ -61,12 +61,6 @@ body {
   transform: translateY(0);
 }
 
-section {
-  padding: 60px 20px;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
 #home {
   opacity: 1 !important;
   transform: translateY(0) !important;
@@ -557,8 +551,8 @@ section ul li {
     line-height:1.5;
 }
 
-.job span{
-  color: var(--accent);
+.job span {
+    color: var(--accent);
 }
 
 .company-link,
@@ -575,7 +569,7 @@ section ul li {
 }
 
 .date{
-    color:#8892b0;
+    color:var(--text-secondary);
     font-size:14px;
     margin:12px 0 24px;
 }
@@ -625,7 +619,7 @@ section ul li {
 
     .tab.active{
         border-left:none;
-        border-bottom:2px solid #64ffda;
+        border-bottom:2px solid var(--accent);
         margin-left:0;
     }
 
