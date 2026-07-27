@@ -137,13 +137,20 @@ section {
 .right {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 15px;
 }
 
 .right a,
 .theme-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   color: var(--text-primary);
-  transition: color 0.3s ease, transform 0.2s ease;
+
+  transition:
+    color 0.3s ease,
+    transform 0.2s ease;
 }
 
 .home {
@@ -658,15 +665,25 @@ section ul li {
 }
 
 .theme-btn {
-  background: transparent;
-  border: none;
-  color: var(--text-primary);
-  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  width: 20px;
+  height: 20px;
+
   padding: 0;
-  transition: color 0.3s ease, transform 0.3s ease;
+  margin: 0;
+
+  background: transparent;
+  border: none;
+
+  color: var(--text-primary);
+  cursor: pointer;
+
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
 }
 
 .theme-btn:hover {
