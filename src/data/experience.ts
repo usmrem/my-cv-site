@@ -3,7 +3,7 @@ export const jobs = [
     company: "KAZTECHNOLOGY",
     title: "Frontend Developer",
     link: "https://vputi.kz/en",
-    date: "AUG 2025 — JUN 2026",
+    date: "JUL 2025 — JUN 2026",
     tasks: [
       "Developed and maintained the Vputi.kz multimedia portal from scratch as part of a development team.",
       "Built responsive and cross-browser user interfaces using HTML5, CSS3 (Flexbox, Grid) and JavaScript (ES6+).",
@@ -17,7 +17,7 @@ export const jobs = [
     company: "TIME INVEST",
     title: "Frontend Developer",
     link: "https://www.timeinvest.kz/",
-    date: "JUL 2024 — JUN 2025",
+    date: "APR 2024 — JUN 2025",
     tasks: [
       "Maintained and enhanced the company's corporate website using HTML, CSS and JavaScript.",
       "Developed responsive user interfaces, implemented new features and resolved frontend issues.",
